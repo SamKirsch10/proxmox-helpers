@@ -58,8 +58,8 @@ for vm_line in $VM_LIST; do
 done
 
 if [[ -n "$REBOOT" ]]; then
-	shutdown now
-elif [[ -z "$NOT_HOST" ]]; then
 	shutdown -r now
+elif [[ -z "$NOT_HOST" ]]; then
+	shutdown now
 fi
 
